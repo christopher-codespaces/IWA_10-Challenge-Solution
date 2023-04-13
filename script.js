@@ -169,54 +169,16 @@ newFormat(firstHolidayTimestamp);
 newFormat(lastHolidayTimestamp);
 newFormat(randomHoliday);
 
-//Alternatively for the date changes
+// The code written is in JavaScript and it defines an object called "holidays" which contains different properties for various holidays including their IDs, names, and dates. The code also sets the dates for each holiday based on the current year. There is a constant called "currentYear" which gets the current year.
 
-//Getting first holiday of the year
-// const firstHolidayDate = new Date(firstHolidayTimestamp);
-// let firstHoliDay = firstHolidayDate.getDate();
-// let firstHoliMonth = firstHolidayDate.getMonth() + 1;
-// const firstHoliYear = firstHolidayDate.getFullYear();
+// A new constant called "christmas" is defined with a value of 6, which represents the Christmas holiday in the holidays object. Additionally, a futureId constant is defined with the value of 9 which is not yet used in the holidays object.
 
-// if (firstHoliDay < 10) {
-//   firstHoliDay = "0" + firstHoliDay;
-// }
-// if (firstHoliMonth < 10) {
-//   firstHoliMonth = "0" + firstHoliMonth;
-// }
+// The code checks if the futureId exists in the holidays object and if it does, it outputs the holiday name, otherwise, it outputs a message.
 
-// const newFirstHolidayFormat = `${firstHoliDay}/${firstHoliMonth}/${firstHoliYear}`;
+// The code creates a new object called "newXmas" to represent a possible change to the Christmas holiday. A copied object is also created to hold a temporary copy of the Christmas holiday in case the change is approved. The code checks if the new Christmas date is earlier than the existing one, and if it is, it updates the copied object with the new name and date, and formats the date in the dd/mm/yy format.
 
-//Getting last holiday of the year
-// const lastHolidayDate = new Date(lastHolidayTimestamp);
-// const lastHoliDay = lastHolidayDate.getDate();
-// const lastHoliMonth = lastHolidayDate.getMonth() + 1;
-// const lastHoliYear = lastHolidayDate.getFullYear();
+// The code then checks for changes in the ID, name, and date properties of the copied object compared to the original Christmas holiday in the holidays object and outputs messages accordingly.
 
-// const newLastHolidayFormat = `${lastHoliDay}/${lastHoliMonth}/${lastHoliYear}`;
+// Math.min and Math.max functions are used to find the first and last holidays of the year. A random holiday is also generated from the holidays object.
 
-//Getting a random holiday of the year
-
-// let randomNbr = Math.floor(Math.random() * 10);
-// if (randomNbr === 9) {
-//   randomNbr -= 1;
-// }
-
-// const randomHoliday = holidays[randomNbr].date;
-
-// const rndHolidayDate = new Date(randomHoliday);
-// let rndHoliDay = rndHolidayDate.getDate();
-// let rndHoliMonth = rndHolidayDate.getMonth() + 1;
-// const rndHoliYear = rndHolidayDate.getFullYear();
-
-// if (rndHoliDay < 10) {
-//   rndHoliDay = "0" + rndHoliDay;
-// }
-// if (rndHoliMonth < 10) {
-//   rndHoliMonth = "0" + rndHoliMonth;
-// }
-
-// const newRandomHolidayFormat = `${rndHoliDay}/${rndHoliMonth}/${rndHoliYear}`;
-
-// console.log(newFirstHolidayFormat);
-// console.log(newLastHolidayFormat);
-// console.log(newRandomHolidayFormat);
+// Finally, a new function called "newFormat" is defined to format a date in the dd/mm/yy format. It is used to output the first, last, and random holidays of the year in that format.
